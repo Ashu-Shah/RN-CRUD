@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
         height: 50,
         marginHorizontal: 10,
         marginVertical: 5,
-        paddingLeft: 10,
         alignItems: 'center',
         elevation: 2,
         shadowColor: '#000',
@@ -20,11 +19,19 @@ const styles = StyleSheet.create({
     },
     rowButton: {
         flexWrap: 'wrap',
-        flex: 1
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    colorBox: {
+        width: 5,
+        height: 50,
+        marginRight: 10
     },
     text: {
         color: '#a1a1a1',
-        fontSize: 16
+        fontSize: 16,
+        flex: 1
     },
     sideButtons: {
         justifyContent: 'center',

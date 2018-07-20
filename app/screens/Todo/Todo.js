@@ -34,7 +34,13 @@ class Todo extends Component{
     };
 
     renderItem = ({item, index}) => (
-        <ListItem onPress={this.handlePress(item, index)} text={item} deleteItem={this.handleDelete(index)} edit={this.handleEdit(index)}/>
+        <ListItem
+            onPress={this.handlePress(item, index)}
+            text={item}
+            deleteItem={this.handleDelete(index)}
+            edit={this.handleEdit(index)}
+            color={index}
+        />
     );
 
     onChange = (state, val) => {
